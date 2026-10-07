@@ -116,8 +116,8 @@
             table, table.print-table { 
                 width: 100% !important; 
                 border-collapse: collapse !important; 
-                margin-top: 10mm !important; 
-                margin-bottom: 15mm !important; 
+                margin-top: 5mm !important; 
+                margin-bottom: 5mm !important; 
                 background: white !important; 
                 page-break-inside: auto !important;
             }
@@ -1808,7 +1808,7 @@
                     </div>
                 `;
             } else if (type === 'petugas') {
-                title = "DAFTAR PETUGAS MEDIS";
+                title = "DAFTAR PETUGAS";
                 tableHTML = `<table class="print-table"><thead><tr><th>Nama</th><th>No. HP</th></tr></thead><tbody>`;
                 db.petugas.forEach(p => { tableHTML += `<tr><td>${p.nama}</td><td>${p.hp}</td></tr>`; });
                 tableHTML += `</tbody></table>`;
